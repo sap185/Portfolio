@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <script src="index.js" defer></script>
+</head>
+
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- Header -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-20 py-4 flex justify-between items-center shadow-md">
+            <h1 class="text-3xl font-bold text-gray-900">Portfolio</h1>
+            <nav>
+                <a href="#home" class="text-gray-700 hover:text-gray-900 px-3 scroll-link">Home</a>
+                <a href="#about" class="text-gray-700 hover:text-gray-900 px-3 scroll-link">About</a>
+                <a href="#skills" class="text-gray-700 hover:text-gray-900 px-3 scroll-link">Skills</a>
+                <a href="#projects" class="text-gray-700 hover:text-gray-900 px-3 scroll-link">Projects</a>
+                <a href="#contact" class="text-gray-700 hover:text-gray-900 px-3 scroll-link">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+
+
+    <!-- Hero Section -->
+    <section id="home" class="bg-gradient-to-r from-blue-500 to-teal-400 text-white">
+        <div class="container mx-auto px-10 py-40 text-left">
+            <h3 class="text-2xl font-semibold">Hello, It's me</h3>
+            <h2 class="text-5xl font-bold mt-2">Santu Paul</h2>
+            <h3 class="mt-4 text-2xl">A passionate <span id="typed-text"></span><span id="cursor">|</span></h3>
+            <p class="mt-4 text">a passionate Back-end Developer with a strong foundation in <br> designing and
+                implementing server-side solutions. Although I may <br> not have extensive formal experience, I've
+                worked on various projects <br> that have honed my skills and deepened my understanding of backend
+                development.</p>
+            <a href="#projects"
+                class="mt-8 inline-block bg-white text-blue-600 font-semibold py-3 px-8 rounded-full shadow-lg hover:bg-blue-50 transition scroll-link">View
+                My Work</a>
+        </div>
+
+        <!-- Bouncing Arrow -->
+        <div class="absolute inset-x-0 bottom-50 flex justify-center">
+            <svg class="animate-bounce w-8 h-8 text-blue-800 text-3xl" fill="none" stroke="currentColor"
+                viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+        </div>
+    </section>
+
+
+    <!-- About Section -->
+    <section id="about" class="bg-gray-200 py-16">
+        <div class="container mx-auto px-6">
+            <div class="flex items-center justify-center">
+                <!-- User Picture -->
+                <div class="w-full md:w-1/2 lg:w-2/3 flex justify-center">
+                    <img src="pic.jpg" alt="User Picture" class="rounded-full shadow-lg w-64 h-64 object-cover">
+                </div>
+                <!-- About Text -->
+                <div class="w-full md:w-1/2 lg:w-2/3 text-center md:text-left md:ml-12 mt-8 md:mt-0">
+                    <h2 class="text-4xl font-bold">About Me</h2>
+                    <p class="mt-4 text-lg text-gray-700 max-w-2xl mx-auto">
+                        I am a web developer with a strong focus on building responsive and user-friendly websites, with
+                        a good design.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Skills Section -->
+    <section id="skills" class="container mx-auto px-6 py-16">
+        <h2 class="text-4xl font-bold text-center">Skills</h2>
+        <div class="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="bg-white p-6 rounded-lg shadow-lg text-center hover:shadow-xl transition">
+                <i class="fa-regular fa-object-group text-4xl" style="color: #4af7db;"></i>
+                <h3 class="mt-4 text-xl font-semibold text-3xl">Web Designer</h3><br>
+                <p>"Where Creativity Meets Functionality"
+                    Design isn't just about aesthetics; it's about creating a seamless user experience. I believe in the
+                    power of design to communicate, engage, and inspire. I'm a firm believer in the less-is-more
+                    principle, which means I focus on simplicity, clarity, and functionality. I carefully analyze your
+                    brand, target audience, and objectives to create designs that resonate and deliver results</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-lg text-center hover:shadow-xl transition">
+                <div class="flex justify-center space-x-2 text-1xl">
+                    <i class="fa-solid fa-m" style="color: #B197FC;"></i>
+                    <i class="fa-solid fa-e" style="color: #B197FC;"></i>
+                    <i class="fa-solid fa-r" style="color: #B197FC;"></i>
+                    <i class="fa-solid fa-n" style="color: #B197FC;"></i>
+                </div><br>
+                <h3 class="mt-4 text-xl font-semibold text-3xl">MERN Developer</h3><br>
+                <p>Aspiring full-stack developer skilled in building web applications with MongoDB, Express.js,
+                    React.js, and Node.js. Experienced in creating projects that showcase responsive design and
+                    efficient backend functionality. Passionate about learning and improving with each project.</p>
+            </div>
+            <!-- <div class="bg-white p-6 rounded-lg shadow-lg text-center hover:shadow-xl transition">
+                <img src="database_manager_icon.png" alt="Database Manager" class="mx-auto h-24 w-24">
+                <h3 class="mt-4 text-xl font-semibold">Backend Developer</h3>
+            </div> -->
+            <div class="bg-white p-6 rounded-lg shadow-lg text-center hover:shadow-xl transition">
+                <i class="fa-solid fa-laptop text-3xl" style="color: #c86565;"></i>
+                <h3 class="mt-4 text-xl font-semibold text-3xl">Programmer</h3><br>
+                <p>A dedicated self-taught programmer with strong knowledge in JavaScript, C++, PHP, and Python. Skilled
+                    in object-oriented programming (OOP) principles, applying them to create efficient, maintainable
+                    code. Continuously learning and improving through hands-on projects and problem-solving.</p>
+            </div>
+        </div>
+
+        <div class="flex justify-center items-start space-x-40 mt-8">
+
+            <!-- Technical Skills Section -->
+            <div class="w-1/2 max-w-md">
+                <h2 class="text-xl font-bold mb-4">Technical Skills</h2>
+
+                <!-- JavaScript Skill -->
+                <div class="mb-4">
+                    <h3 class="font-semibold mb-1">JavaScript</h3>
+                    <div class="w-full bg-gray-200 rounded-full h-4">
+                        <div class="bg-green-500 h-4 rounded-full" style="width: 75%;"></div>
+                    </div>
+                </div>
+
+                <!-- Python Skill -->
+                <div class="mb-4">
+                    <h3 class="font-semibold mb-1">Python</h3>
+                    <div class="w-full bg-gray-200 rounded-full h-4">
+                        <div class="bg-blue-500 h-4 rounded-full" style="width: 65%;"></div>
+                    </div>
+                </div>
+
+                <!-- C++ Skill -->
+                <div class="mb-4">
+                    <h3 class="font-semibold mb-1">C++</h3>
+                    <div class="w-full bg-gray-200 rounded-full h-4">
+                        <div class="bg-red-500 h-4 rounded-full" style="width: 55%;"></div>
+                    </div>
+                </div>
+
+                <!-- PHP Skill -->
+                <div class="mb-4">
+                    <h3 class="font-semibold mb-1">PHP</h3>
+                    <div class="w-full bg-gray-200 rounded-full h-4">
+                        <div class="bg-purple-500 h-4 rounded-full" style="width: 60%;"></div>
+                    </div>
+                </div>
+
+                <!-- Java Skill -->
+                <div class="mb-4">
+                    <h3 class="font-semibold mb-1">Java</h3>
+                    <div class="w-full bg-gray-200 rounded-full h-4">
+                        <div class="bg-yellow-500 h-4 rounded-full" style="width: 40%;"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Professional Skills Section -->
+            <div class="w-1/2 max-w-md">
+                <h2 class="text-xl font-bold mb-6">Professional Skills</h2>
+                <div class="grid grid-cols-2 gap-8">
+                    <!-- Communication Skill -->
+                    <div class="flex flex-col items-center">
+                        <div class="relative">
+                            <div class="w-24 h-24 rounded-full bg-gray-200 flex items-center justify-center">
+                                <span class="text-xl font-semibold">85%</span>
+                            </div>
+                            <svg class="absolute inset-0 w-24 h-24">
+                                <circle cx="50%" cy="50%" r="36" fill="none" stroke="#e5e7eb" stroke-width="8" />
+                                <circle cx="50%" cy="50%" r="36" fill="none" stroke="#4ade80" stroke-width="8"
+                                    stroke-dasharray="226" stroke-dashoffset="40" />
+                            </svg>
+                        </div>
+                        <p class="mt-3 font-medium">Communication</p>
+                    </div>
+
+                    <!-- Group Spirit Skill -->
+                    <div class="flex flex-col items-center">
+                        <div class="relative">
+                            <div class="w-24 h-24 rounded-full bg-gray-200 flex items-center justify-center">
+                                <span class="text-xl font-semibold">90%</span>
+                            </div>
+                            <svg class="absolute inset-0 w-24 h-24">
+                                <circle cx="50%" cy="50%" r="36" fill="none" stroke="#e5e7eb" stroke-width="8" />
+                                <circle cx="50%" cy="50%" r="36" fill="none" stroke="#60a5fa" stroke-width="8"
+                                    stroke-dasharray="226" stroke-dashoffset="22" />
+                            </svg>
+                        </div>
+                        <p class="mt-3 font-medium">Teamwork</p>
+                    </div>
+
+                    <!-- Creativity Skill -->
+                    <div class="flex flex-col items-center">
+                        <div class="relative">
+                            <div class="w-24 h-24 rounded-full bg-gray-200 flex items-center justify-center">
+                                <span class="text-xl font-semibold">60%</span>
+                            </div>
+                            <svg class="absolute inset-0 w-24 h-24">
+                                <circle cx="50%" cy="50%" r="36" fill="none" stroke="#e5e7eb" stroke-width="8" />
+                                <circle cx="50%" cy="50%" r="36" fill="none" stroke="#facc15" stroke-width="8"
+                                    stroke-dasharray="226" stroke-dashoffset="70" />
+                            </svg>
+                        </div>
+                        <p class="mt-3 font-medium">Creativity</p>
+                    </div>
+
+                    <!-- Problem Solving Skill -->
+                    <div class="flex flex-col items-center">
+                        <div class="relative">
+                            <div class="w-24 h-24 rounded-full bg-gray-200 flex items-center justify-center">
+                                <span class="text-xl font-semibold">80%</span>
+                            </div>
+                            <svg class="absolute inset-0 w-24 h-24">
+                                <circle cx="50%" cy="50%" r="36" fill="none" stroke="#e5e7eb" stroke-width="8" />
+                                <circle cx="50%" cy="50%" r="36" fill="none" stroke="#fb923c" stroke-width="8"
+                                    stroke-dasharray="226" stroke-dashoffset="45" />
+                            </svg>
+                        </div>
+                        <p class="mt-3 font-medium">Problem Solving</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="container mx-auto px-6 py-16">
+        <h2 class="text-4xl font-bold text-center">Projects</h2>
+
+        <div class="mt-12 grid gap-8">
+            <div class="container mx-auto p-8 flex  justify-center gap-8">
+                <div class="bg-white shadow-xl rounded-lg overflow-hidden hover:shadow-2xl transition relative group transform hover:scale-105"
+                    style="max-width: 900px; width: 100%;">
+                    <img src="Screenshot (22).png" alt="Mobikart Project" class="w-full h-96 object-cover">
+                    <div
+                        class="p-12 absolute inset-0 bg-white bg-opacity-95 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out">
+                        <h3 class="text-4xl font-bold">Mobikart Project</h3>
+                        <p class="mt-8 text-gray-800 text-lg">An e-commerce platform for mobile phone enthusiasts.
+                            Browse, compare, and purchase the latest smartphones with ease. <br><br>
+                            <b>Here The Github Link ..... </b>
+                            <a href="https://github.com/sap185/Mobilekart"
+                                class="bg-red-300 p-1 rounded-lg text-blue-600">More-></a>
+                        </p>
+                    </div>
+                </div>
+                <div class="bg-white shadow-xl rounded-lg overflow-hidden hover:shadow-2xl transition relative group transform hover:scale-105"
+                    style="max-width: 900px; width: 100%;">
+                    <img src="Screenshot (23).png" alt="Online Polling Project" class="w-full h-96 object-cover">
+                    <div
+                        class="p-12 absolute inset-0 bg-white bg-opacity-95 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out">
+                        <h3 class="text-4xl font-bold">Online Polling Project</h3>
+                        <p class="mt-8 text-gray-800 text-lg">A secure web application for conducting online elections
+                            with real-time results and voter authentication.<br><br>
+                            <b>Here The Github Link ..... </b>
+                            <a href="https://github.com/sap185/Online-Voting"
+                                class="bg-red-300 p-1 rounded-lg text-blue-600">More-></a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="bg-white shadow-xl rounded-lg overflow-hidden hover:shadow-2xl transition relative group transform hover:scale-105"
+                    style="max-width: 900px; width: 100%;">
+                    <div class="w-full h-96 overflow-hidden">
+                        <img src="" alt="News and Weather Project" class="w-full h-full object-cover">
+                    </div>
+                    <div
+                        class="p-12 absolute inset-0 bg-white bg-opacity-95 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out">
+                        <h3 class="text-4xl font-bold">News and Weather</h3>
+                        <p class="mt-8 text-gray-800 text-lg">A real-time weather tracker that brings you the latest
+                            updates from cities and countries worldwide, along with top news stories.<br><br>
+                            <b>Here The Github Link ..... </b>
+                            <a href="https://github.com/sap185/News-and-weather-with-api"
+                                class="bg-red-300 p-1 rounded-lg text-blue-600">More-></a>
+                        </p>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+        </div>
+
+
+    </section>
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="container mx-auto px-6 py-16">
+        <h2 class="text-4xl font-bold text-center">Contact Me</h2>
+        <div class="mt-8 max-w-lg mx-auto">
+            <form action="#" method="POST" class="bg-white shadow-md rounded-lg p-8">
+                <div class="mb-4">
+                    <label for="name" class="block text-gray-700 font-semibold">Name</label>
+                    <input type="text" id="name" name="name"
+                        class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600">
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="block text-gray-700 font-semibold">Email</label>
+                    <input type="email" id="email" name="email"
+                        class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600">
+                </div>
+                <div class="mb-4">
+                    <label for="message" class="block text-gray-700 font-semibold">Message</label>
+                    <textarea id="message" name="message" rows="4"
+                        class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600"></textarea>
+                </div>
+                <button type="submit"
+                    class="w-full bg-blue-600 text-white py-2 px-4 rounded-lg font-semibold hover:bg-blue-700 transition">Send
+                    Message</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="mt-6 p-8">
+        <div class="flex justify-center space-x-4 text-3xl">
+            <a href="https://www.facebook.com/profile.php?id=100027869943163"><i class="fa-brands fa-facebook"
+                    style="color: #4509fb;"></i></a>
+            <a href="http://"><i class="fa-brands fa-instagram" style="color: #fe016f;"></i></a>
+            <a href="https://www.linkedin.com/in/santu-paul-671a33246"><i class="fa-brands fa-linkedin"
+                    style="color: #0a64ff;"></i></a>
+            <a href="https://github.com/sap185"><i class="fa-brands fa-github" style="color: #04142f;"></i></a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-4">
+        <div class="container mx-auto text-center">
+            <p>Just a Creation By Myself</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
